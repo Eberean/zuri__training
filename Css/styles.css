@@ -709,3 +709,7 @@ footer {
   flex-shrink: 2;
   width: 35%;
 }
+
+.footer-section__agreements p a {
+  color: #ffff;
+}
