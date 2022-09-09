@@ -10,7 +10,7 @@
   <title>Termbuddy | About Us</title>
 </head>
 <body>
-  <header class="primary-header">
+  <header>
     <div class="container">
       <nav class="nav-bar">
         <div class="logo">
@@ -26,7 +26,7 @@
               <div class="nav-links__pages-wrapper">
                   <div class="nav-links__pages">
                     <li>
-                      <a href="./product.html">Product</a>
+                      <a href="./product.html" class="product__link">Product</a>
                     </li>
   
                     <li>
@@ -56,6 +56,34 @@
       </nav>
     </div>
   </header>
+  
+  <nav class="mobile-nav__container">
+    <ul class="mobile-nav__list-container">
+        <div class="mobile-nav__list-items">
+            <li>
+                <a href="./product.html">Product</a>
+            </li>
+            <li>
+                <a href="./about.html">About Us</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="./docs.html">Docs</a>
+            </li>
+        </div>
+        <div class="mobile-nav__authentication-btns">
+            <li class="sign-in btn">
+                <a href="./login.html">Sign In</a>
+            </li>
+            <li class="sign-up btn">
+                <a href="./signUp.html">Sign Up</a>
+            </li>
+        </div>
+    </ul>
+</nav>
+
   <div class="container">
     <div class="about-container__wrapper">
       <div class="about-text__wrapper">
@@ -78,7 +106,6 @@
           </div>
         </div>
       </div>
-      <div class="border-line"></div>
 
       <div class="cards">
         <div class="cards-contents__wrapper">
@@ -150,5 +177,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./Js/about.js"></script>
 </body>
 </html>

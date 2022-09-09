@@ -24,7 +24,7 @@ body {
   overflow: hidden;
 }
 
-.primary-header {
+header {
   background-color: #f5f5f5;
   position: fixed;
   top: 0;
@@ -163,24 +163,28 @@ ul.nav-links li {
 }
 
 .cards-image__wrapper {
-  width: 60%;
-}
-
-.cards-image__wrapper img {
   width: 100%;
 }
 
+.cards-image__wrapper img {
+  max-width: 100%;
+}
+
 .cards-contents__wrapper {
-  padding: 2rem ;
-  width: 80%;
+  padding: 2rem 0;
+  width: 95%;
   margin: auto;
+}
+
+.cards-contents__wrapper h1 {
+  font-size: 1.7rem;
+  line-height: 1.6;
 }
 
 .cards-contents__wrapper p {
   font-size: 1.1rem;
   line-height: 1.6;
   padding: 1.5rem 0;
-  margin: auto;
 }
 
 .cards-btn {
@@ -249,4 +253,235 @@ footer {
 
 .footer-section__agreements p a {
   color: #ffff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  /* Header Section*/
+
+  ul.nav-links {
+    display: none;  
+}
+
+.logo {
+    width: 50%;
+    text-align: left;
+}
+
+.logo span {
+    width: 80%;
+    margin-inline: 0;
+    font-size: 1.4rem;
+}
+
+.hamburger__wrapper {
+    position: relative;
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    z-index: 10;
+}
+
+.hamburger__wrapper .bar, .hamburger__wrapper::before, .hamburger__wrapper::after {
+    background-color: #2B7A78;
+    width: 100%;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.hamburger__wrapper.active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger__wrapper.active::after {
+    transform: rotate(45deg) translate(-5px, -4px);
+}
+
+.hamburger__wrapper.active .bar {
+    opacity: 0;
+}
+
+/* Mobile NAV */
+
+.mobile-nav__container {
+    background-color: #FFFFFF;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    min-height: 94vh;
+    padding: 8rem 0;
+    z-index: 20;
+    transition: all 0.5s linear;
+}
+
+.mobile-nav__container.slide-out {
+    left: 0;
+}
+
+.mobile-nav__list-container {
+    width: 85%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.mobile-nav__list-items {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mobile-nav__list-items a {
+    display: block;
+    padding: 1.8rem 0;
+}
+
+.mobile-nav__authentication-btns {
+    margin-top: 8rem;
+}
+
+.mobile-nav__authentication-btns .btn {
+    text-align: center;
+    font-size: 1.05rem;
+    width: 70%;
+    padding: 0.85rem 0;
+    margin: 0 auto;
+    border: 1px solid #2B7A78;
+    border-radius: 7px;
+}
+
+.mobile-nav__authentication-btns .sign-in {
+    margin-bottom: 1rem;
+}
+
+.mobile-nav__authentication-btns .sign-up{
+    background-color: #2B7A78;
+}
+
+.cards-wrapper {
+  width: 95%;
+  max-width: 1024px;
+  margin: 2rem auto;
+}
+
+.cards {
+  padding: 2rem 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.cards-image__wrapper {
+  width: 80%;
+}
+
+.cards-contents__wrapper {
+  padding: 2rem 0;
+  width: 90%;
+  margin: auto;
+}
+
+/* Footer Section */
+.footer-container {
+  display: block;
+}
+
+.footer-container a {
+  line-height: 2;
+}
+
+.footer-icons__header {
+  font-size: 1.7rem;
+}
+
+.icons .fab {
+  padding: 0 .1rem 0 .1rem;
+  padding-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.footer-section__head {
+  font-size: 1.56rem;
+  padding-top: 2rem;
+}
+
+.footer-container__below-wrapper {
+  display: block;
+  padding-top: 2rem;
+}
+
+.footer-section__copyright p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-section__agreements {
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.footer-section__agreements p a {
+  font-size: .95rem;
+}
+}
+
+@media (max-width: 600px) {
+  .product-container__wrapper {
+    width: 95%;
+    margin: 7rem auto;
+  }
+
+  .product-text__wrapper h1 {
+    font-size: 2.5rem;
+  }
+  
+  .product-text__wrapper p {
+    font-size: 1.1rem;
+  }
+
+  .cards {
+    padding: 2rem 1rem;
+  }
+
+  .cards-wrapper {
+    width: 95%;
+    max-width: 1024px;
+    margin: 2rem auto;
+  }
+
+  .cards-contents__wrapper {
+    padding: 2rem .5rem;
+    width: 95%;
+    margin: auto;
+  }
+
+  .cards-image__wrapper {
+    width: 100%;
+  }
+
+  .cards-contents__wrapper h1 {
+    font-size: 1.5rem;
+  }
+  
+  .cards-contents__wrapper p {
+    font-size: 1rem;
+    padding: 1.2rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-text__wrapper p {
+    font-size: .95rem;
+  }
+
+  .cards-contents__wrapper p {
+    font-size: .85rem;
+    padding: 1.2rem 0;
+  }
 }
