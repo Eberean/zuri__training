@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-free-5.13.1-web/css/all.min.css">
+  <link rel="stylesheet" href="../Css/forgot.css">
+  <title>Forgot</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1><a href="./index.html">Termbuddy</a></h1>
+        <a href="./login.html" class="nav-bar">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container__wrapper mt__1">
+    <div class="container-contents">
+      <div class="content-img">
+        <img src="./Images/Forgot password-rafiki.svg" alt="">
+      </div>
+
+        <form id="form" class="form">
+         <div class="form-text">
+           <h2>Forgot Password</h2>
+           <p>Enter your email and we will send you a link to reset your password.</p>
+         </div>
+          <div class="form-details">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+           <label for="email" class="label">Email</label>
+           <input type="email" placeholder="JohnDoe@gmail.com" id="email" required>
+           <div class="error"></div>
+          </div>
+
+          <button id="submit">Send Link</button>
+        </form>
+    </div>
+  </section>
+
+  <script src="./fontawesome-free-5.13.1-web/js/fontawesome.min.js"></script>
+  <script src="./Js/forgot.js"></script>
+</body>
+</html>
