@@ -35,7 +35,7 @@ h1 a {
 .nav-bar {
   border: 1px solid #525252;
   padding: .6rem 1.4rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   background-color: #2B7A78;
   font-size: 1.1rem;
   color: #fff;
@@ -68,7 +68,7 @@ h1 a {
 .content-img {
   background-color: #3b9e97;
   width: 44%;
-  height: 650px;
+  /* height: 670px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,10 +80,10 @@ h1 a {
   background-color: #fff;
   width: 56%;
   max-width: 600px;
-  height: 650px;
+  /* height: 670px; */
   display: flex;
   flex-direction: column;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -94,10 +94,15 @@ h1 a {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 .form .label {
   display: block;
+}
+
+.error {
+  font-size: .8rem;
+  color: #ed4a1f;
 }
 
 .icon, .icon-2 {
@@ -187,4 +192,33 @@ button {
   color: #2B7A78;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+@media (max-width: 810px) {
+  .container__wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-contents {
+    display: block;
+  }
+  
+  .content-img {
+    background: none;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .form {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 2rem 1rem;
+  }
 }

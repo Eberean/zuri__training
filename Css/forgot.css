@@ -68,7 +68,6 @@ h1 a {
 .content-img {
   background-color: #3b9e97;
   width: 44%;
-  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +79,6 @@ h1 a {
   background-color: #fff;
   width: 56%;
   max-width: 600px;
-  height: 400px;
   display: flex;
   flex-direction: column;
   padding: 2rem 4rem;
@@ -91,7 +89,7 @@ h1 a {
 .form-text h2 {
   text-align: center;
   color: #272727;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 2rem;
@@ -100,7 +98,7 @@ h1 a {
 .form-text p {
   text-align: center;
   color: #272727;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
@@ -108,8 +106,8 @@ h1 a {
 
 .form .label {
   display: block;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .icon, .icon-2 {
@@ -117,14 +115,14 @@ h1 a {
 }
 
 .fas {
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   color: #525252;
 }
 
 .fa-envelope {
   position: absolute;
-  top: 48px;
+  top: 46px;
   left: 10px;
 }
 
@@ -158,8 +156,69 @@ button {
   margin: 1rem 0;
 }
 
-.signup {
+.form a {
+  text-align: center;
   color: #2B7A78;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media (max-width: 1030px) {
+  .form {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .container__wrapper {
+    width: 85%;
+    margin: 0rem auto;
+  }
+}
+
+@media (max-width: 710px) {
+  .container-contents {
+    display: block;
+  }
+  
+  .content-img {
+    background: none;
+    width: 98%;
+    margin: auto;
+  }
+  
+  .form {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 395px) {
+  .form {
+    padding: 2rem 1rem;
+  }
+
+  .form-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-text p {
+    font-size: .9rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .fas {
+    font-size: .9rem;
+  }
+  
+  .fa-envelope {
+    position: absolute;
+    top: 43px;
+    left: 10px;
+  }
+  
+  .form-details input {
+    font-size: .9rem;
+  }
 }

@@ -35,7 +35,7 @@ h1 a {
 .nav-bar {
   border: 1px solid #525252;
   padding: .6rem 1.4rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   background-color: #2B7A78;
   font-size: 1.1rem;
   color: #fff;
@@ -68,7 +68,6 @@ h1 a {
 .content-img {
   background-color: #3b9e97;
   width: 44%;
-  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +78,6 @@ h1 a {
 .form {
   background-color: #fff;
   width: 56%;
-  max-width: 600px;
   display: flex;
   flex-direction: column;
   padding: 2rem 4rem;
@@ -192,4 +190,97 @@ button {
   color: #2B7A78;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+/* Responsiveness / Media Queries */
+
+@media (max-width: 1030px) {
+  .container__wrapper {
+    width: 90%;
+    margin: 0rem auto;
+  }
+
+  .ps__details label {
+    font-size: .9rem;
+  }
+  
+  .forgot__pw {
+    font-size: .9rem;
+  }
+
+  .form {
+    background-color: #fff;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container__wrapper {
+    width: 86%;
+    margin: 0rem auto;
+  }
+
+  .container-contents {
+    display: block;
+  }
+  
+  .content-img {
+    background: none;
+    width: 100%;
+  }
+  
+  .form {
+    width: 100%;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+  }
+
+  .form-text h2 {
+    color: #272727;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .ps__details label {
+    font-size: 1rem;
+  }
+  
+  .forgot__pw {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-details input {
+    font-size: .85rem;
+    font-weight: 400;
+  }
+
+  .form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .ps__details label {
+    font-size: .8rem;
+  }
+  
+  .forgot__pw {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .form p {
+    font-size: .8rem;
+  }
+  
+  .signup {
+    color: #2B7A78;
+    font-size: .9rem;
+  }
 }
